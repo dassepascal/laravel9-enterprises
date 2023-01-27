@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('activity');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('address');
             $table->string('site');
             $table->string('slug')->nullable();
