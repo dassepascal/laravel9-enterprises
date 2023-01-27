@@ -48,9 +48,9 @@ class EnterpriseController extends Controller
             'phone'=>$request->input('phone'),
             'site'=>$request->input('site'),
             'address'=>$request->input('address'),
-            
+
         ]);
-        return redirect()->route('enterprises.index');
+        return redirect()->route('enterprises.index')->with('success', "L'entreprise a bien crée !");
     }
 
     /**
@@ -109,6 +109,6 @@ class EnterpriseController extends Controller
     public function delete(Enterprise $enterprise)
     {
         $enterprise->delete();
-        return redirect()->route('enterprises.index')->with('success', 'lentreprise est delete  ');
+        return redirect()->route('enterprises.index')->with('success', "l'entreprise a bien été supprimée !");
     }
 }

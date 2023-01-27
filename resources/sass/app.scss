@@ -8,6 +8,7 @@
 @import 'bootstrap/scss/bootstrap';
 
 
-// .invalid-feedback{
-//    display:block
-// }
+.is-valid
+{
+    color:red;
+}

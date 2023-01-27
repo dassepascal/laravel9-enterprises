@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{ route('enterprises') }}">Entreprises</a>

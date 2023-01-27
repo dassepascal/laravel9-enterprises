@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/20ea8add13.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
-    {{-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
     {{-- <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script> --}}
@@ -17,7 +17,7 @@
 
 
     <!-- Styles -->
-    @vite([ 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>gestion recherche emploi</title>
 </head>
 
@@ -25,7 +25,7 @@
 
     <div class="container justify-content-center mt-3 border border-darck shadow-lg p-3 mb-5 bg-body rounded">
         @include('incs.navbar')
-
+        @include('incs/flash')
         @yield('content')
 
 
